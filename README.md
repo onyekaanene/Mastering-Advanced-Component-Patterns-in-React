@@ -60,19 +60,9 @@ function TabPanel({ children, name }) {
 
 export { Tabs, TabList, Tab, TabPanels, TabPanel };
 
-**Usage:**
+**2. Render Props**
 
-<Tabs defaultActiveTab="1">
-  <TabList>
-    <Tab name="1">Tab 1</Tab>
-    <Tab name="2">Tab 2</Tab>
-  </TabList>
-  <TabPanels>
-    <TabPanel name="1">Content for Tab 1</TabPanel>
-    <TabPanel name="2">Content for Tab 2</TabPanel>
-  </TabPanels>
-</Tabs>
-
+Render Props is a pattern where a function is passed as a prop to a component. It provides flexibility in rendering logic.
 	
 **Example: Mouse Tracker**
 
@@ -94,9 +84,6 @@ function MouseTracker({ render }) {
 
 export default MouseTracker;
 
-**Usage:**
-
-<MouseTracker render={({ x, y }) => (<h1>Mouse position: ({x}, {y})</h1>)} />
 
 **3. Higher-Order Components (HOCs)**
 
@@ -120,13 +107,6 @@ function withAuth(WrappedComponent) {
 
 export default withAuth;
 
-**Usage:**
-
-function Dashboard() {
-  return <h1>Welcome to the Dashboard!</h1>;
-}
-
-export default withAuth(Dashboard);
 
 **4. Controlled vs. Uncontrolled Components**
 
