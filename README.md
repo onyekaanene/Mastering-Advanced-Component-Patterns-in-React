@@ -2,13 +2,10 @@
 
 Discover the hidden power of React's flexibility and elevate your UI component game! In this in-depth exploration, we'll dive into four expert-level patterns that will transform your coding skills:
 
-**Compound Components:** Build modular, reusable UI elements
-
-**Render Props:** Harness the power of flexible, dynamic rendering
-
-**Higher-Order Components (HOCs):** Wrap your components with reusable logic
-
-**Controlled vs. Uncontrolled Components:** Master the art of state management
+Compound Components: Build modular, reusable UI elements
+Render Props: Harness the power of flexible, dynamic rendering
+Higher-Order Components (HOCs): Wrap your components with reusable logic
+Controlled vs. Uncontrolled Components: Master the art of state management
 
 Get ready to revolutionize your React development workflow and create stunning, efficient UI components that leave a lasting impression!
 
@@ -99,9 +96,7 @@ export default MouseTracker;
 
 **Usage:**
 
-<MouseTracker render={({ x, y }) => (
-  <h1>Mouse position: ({x}, {y})</h1>
-)} />
+<MouseTracker render={({ x, y }) => (<h1>Mouse position: ({x}, {y})</h1>)} />
 
 **3. Higher-Order Components (HOCs)**
 
